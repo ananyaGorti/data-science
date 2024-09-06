@@ -1,0 +1,577 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: rgb(254, 250, 242);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 390; 
+    padding: 0;
+    overflow: none; 
+    margin: 0; 
+    font-size: 1.25rem; 
+    color: rgb(83, 82, 82); 
+    max-width: 100%; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+    align-items: center;
+    /*padding: 10px 20px;*/
+    padding: 1vw 1vw; 
+    gap: 20px;
+    background-color: white; 
+}
+
+.navbar span {
+    margin-right: auto;  /*Pushes the span to the left */
+}
+
+
+h1, h2 {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 100%;
+    color: black; 
+}
+
+h2 {
+    font-size: 3rem; 
+}
+span {
+    color: black; 
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+    padding-bottom: 5px; /* Add padding for space below the text */
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+    width: 100%;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: grey;
+}
+
+.main-heading {
+    /*padding: 10vh 5vw;*/
+    text-align: center;
+    /*background-color: rgb(231, 220, 177)*/
+    background-color: rgb(156, 208, 253); 
+    max-width: 100%; 
+}
+
+
+h1 {
+    font-size: 4.5rem;
+    margin: 20px 0;
+}
+
+.content {
+
+    text-align: center;
+    color: black;
+    z-index: 2;
+    position: relative;
+}
+
+.words{
+    color: black !important; 
+    margin-top: -13vh; 
+    width: 50%; 
+}
+
+.main-heading h4 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+
+
+
+.main-heading h4 {
+    width: 50%; 
+    justify-content: center;
+    /*margin: auto; */
+}
+
+.main-heading button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.engage .button-28 {
+    padding: 10px 10px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    cursor: pointer;
+    z-index:10000 !important; 
+    position:absolute;  
+    width: 50%; 
+    max-width: 13vw; 
+}
+
+.services .button-28 {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    border-color: black !important; 
+    max-width: 13vw; 
+    margin-top: -20px; 
+}
+.engage .button-28 {
+    border-color: black !important; 
+}
+
+.services {
+    padding: 20px 5vw;
+    text-align: center;
+    background-color: rgb(156, 208, 253); 
+    margin: 20px 0;
+    position: relative;
+}
+
+.engage {
+    max-width: 45vw; 
+    border-radius: 50px;
+    
+    margin: auto;
+    border-radius: 20px;
+    text-align: left;
+    padding: 20px 5vw;
+    padding-left: 1vw; 
+}
+
+
+.services h3, .services p {
+    margin: 10px 0;
+}
+
+.first-img {
+    margin: 0 auto;
+    padding-bottom: 100px; 
+}
+
+@media (min-width: 1000px) {
+    #start-img {
+        width: 45vw !important; 
+    }
+}
+.lottie-ipad {
+    display: none; 
+}
+
+@media (max-width: 780px) {
+    .inner-services > div {
+        transform: scale(.8); 
+    }
+    h2 {
+        font-size: 2rem; 
+    }
+    body {
+        font-size: 1rem; 
+    }
+    .t h2 {
+        font-size: 0rem !important; 
+    }
+    body {
+        width: 100% !important; 
+    }
+    #start-img {
+        width: 10vw !important; 
+    }
+
+    .main-heading p {
+        width: 50%; 
+        justify-content: center;
+        margin: auto; 
+    }
+    .main-heading {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #l {
+        transform: translateX(-19.5vw) translateY(30px); 
+    }
+    .lottie-ipad {
+        display: block; 
+        margin-top: -12vh; 
+    }
+    .reg, .hiders {
+        display: none; 
+    }
+    h2 {
+        font-size: 2.5rem; 
+    }
+    .main-heading h1, .t{
+        font-size: 2.5rem;
+    }
+
+    .main-heading h4 {
+        font-size: 1.2rem;
+    }
+
+    .main-heading .button-28 {
+        font-size: 1rem;
+        padding: 8px 16px;
+        min-width: 200vw; 
+        min-width: 20vh; 
+    }
+
+    .first-img {
+        width: 100%;
+        height: auto;
+    }
+ 
+
+    .inner-services {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 60px !important; 
+    }
+
+    .inner-services > div {
+        max-width: 200px; 
+        width: 50%;
+        display: flex !important;
+        justify-content: center; /* Centers items along the main axis (vertical in this case) */
+        align-items: center; /* Centers items along the cross axis (horizontal in this case) */
+        margin: auto !important; 
+
+    transform: scale(1.05); /* Scale the table by 1.2 times */
+    }
+    .services {
+        margin:auto; 
+    }
+    .second-part {
+        display: flex !important;
+        justify-content: center; /* Centers items along the main axis (vertical in this case) */
+        align-items: center; /* Centers items along the cross axis (horizontal in this case) */
+        margin: auto !important; 
+        text-align: center; 
+    }
+    .engage {
+        text-align: center !important; 
+        font-size: 1.35rem; 
+    }
+    .second-part h2 {
+        font-size: 3.5rem; 
+    }
+}
+
+@media (max-height: 700px) {
+
+    .first-img {
+        padding: 0px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .main-heading h1, .t{
+        font-size: 2.5rem;
+    }
+
+    .main-heading h4 {
+        font-size: 1rem;
+    }
+
+    .main-heading button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
+
+
+
+/* CSS */
+.button-28 {
+  appearance: none;
+  background-color: black;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 0.5rem;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+  max-width: 30%; 
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: black;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+  border-color: white; 
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.main-heading {
+    /*background-color: rgb(231, 220, 177);*/
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+
+    max-width: 100%;
+}
+
+.curve svg {
+    display: block;
+    width: 100vw;  /* Ensure it covers the entire viewport width */
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(30px);  /* Slightly moves the curve down to cover any gaps */
+}
+
+.second-part {
+    margin:auto; 
+    text-align: center; 
+    position: relative;
+}
+
+
+.yes {
+    display: grid; 
+
+  grid-template-columns: auto auto auto;
+}
+
+
+.inner-services {
+    display: flex;
+    justify-content: space-between; /* Evenly spaces the divs with space between them */
+    align-items: stretch; /* Makes all divs the same height */
+    gap: 50px;
+    width: 100%; /* Ensures the div takes the full width of its container */
+    padding: 20px; /* Adds padding around the content */
+}
+
+.inner-services {
+    display: flex;
+    justify-content: space-between; /* Evenly spaces the divs with space between them */
+    align-items: stretch; /* Makes all divs the same height */
+    gap: 50px;
+    width: 100%; /* Ensures the div takes the full width of its container */
+    padding: 20px; /* Adds padding around the content */
+}
+
+.inner-services > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content within each div is spaced appropriately */
+    padding: 20px;
+    background-color: #fff; /* Background for each service div */
+    border-radius: 8px; /* Rounds the corners of each service div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to each service div */
+    flex: 1; /* Makes each div grow equally within the container */
+    max-width: 350px; /* Increase the width from 300px to 350px */
+}
+
+.inner-services > div h2 {
+    margin-top: 0;
+}
+
+.inner-services > div p {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.inner-services > div i {
+    align-self: center;
+    margin-top: 20px;
+}
+
+
+
+#second-curve {
+    margin-top: 1vh !important; 
+}
+
+.services h2 {
+    font-size: 2.5rem !important; 
+}
+
+i {
+    color: black; 
+}
+
+#comparison {
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    transform: scale(1.1); /* Scale the table by 1.2 times */
+
+}
+
+.comparison-table thead th {
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent; /* No background shading */
+}
+
+.comparison-table tbody td {
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+/* Dark row shading */
+.comparison-table tbody tr:nth-child(even) {
+    background-color: #e0e0e0; /* Darker background color */
+}
+
+/* Light row shading */
+.comparison-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Lighter background color */
+}
+
+
+/* Different background colors for different rows */
+.comparison-table tbody tr:nth-child(odd) .highlight {
+    background-color: rgb(4, 138, 255); /* Darker blue on light background */
+    color: black; /* Keep text visible */
+}
+
+.comparison-table tbody tr:nth-child(even) .highlight {
+    background-color: rgb(138, 201, 255); /* lighter blue on dark background */
+    color: black; /* Keep text visible */
+}
+
+.comparison-table th:first-child,
+.comparison-table td:first-child {
+    border-left: none;
+}
+
+.comparison-table th:last-child,
+.comparison-table td:last-child {
+    border-right: none;
+}
+
+/* Darker blue for the header title */
+.comparison-table thead .highlight {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgb(138, 201, 255); /* Darker base blue color */
+    color: black; /* Ensure text is visible */
+}
+
+.comparison-table tbody tr:last-child .highlight {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.curve-2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    transform: translateY(35px); 
+    z-index:9999 !important;
+
+}
+
+#third-curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+#third-curve svg {
+
+    display: block;
+    width: 100%;
+    height: auto;   
+     transform: translateY(-30px) scaleX(-1); /* Apply both transformations */
+
+}
+
+.sign-up-pls {
+    margin:auto; 
+    max-width: 80vw; 
+    text-align: center; 
+    background-color: blanchedalmond; 
+    border-radius: 40px; 
+    padding: 10px; 
+}
+
+footer {
+    background: rgb(23, 44, 62); 
+}
+
+#start-img {
+    width: 70vw; 
+}
