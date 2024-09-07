@@ -202,7 +202,7 @@ h1 {
         width: 100% !important; 
     }
     #start-img {
-        width: 10vw !important; 
+        width: 40vw !important; 
     }
 
     .main-heading p {
@@ -217,9 +217,6 @@ h1 {
 
 @media (max-width: 900px) {
 
-    #l {
-        transform: translateX(-19.5vw) translateY(30px); 
-    }
     .lottie-ipad {
         display: block; 
         margin-top: -12vh; 
@@ -230,10 +227,17 @@ h1 {
     h2 {
         font-size: 2.5rem; 
     }
-    .main-heading h1, .t{
-        font-size: 2.5rem;
+    .main-heading h1{
+        font-size: 4.5rem !important;
     }
+    .t {
+        font-size: 2rem; 
+    };
 
+    .engage p {
+        width: 100vw !important;
+        margin: 0;  
+    }
     .main-heading h4 {
         font-size: 1.2rem;
     }
@@ -264,24 +268,24 @@ h1 {
         align-items: center; /* Centers items along the cross axis (horizontal in this case) */
         margin: auto !important; 
 
-    transform: scale(1.05); /* Scale the table by 1.2 times */
+    transform: scale(1.02); /* Scale the table by 1.2 times */
     }
     .services {
         margin:auto; 
-    }
+    }/*
     .second-part {
         display: flex !important;
-        justify-content: center; /* Centers items along the main axis (vertical in this case) */
-        align-items: center; /* Centers items along the cross axis (horizontal in this case) */
+        justify-content: center; /* Centers items along the main axis (vertical in this case) ß
+        align-items: center; /* Centers items along the cross axis (horizontal in this case) 
         margin: auto !important; 
         text-align: center; 
     }
     .engage {
         text-align: center !important; 
         font-size: 1.35rem; 
-    }
+    }*/
     .second-part h2 {
-        font-size: 3.5rem; 
+        font-size: 1.5rem; 
     }
 }
 
