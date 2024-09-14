@@ -202,9 +202,6 @@ h1 {
     body {
         font-size: 1rem; 
     }
-    .t h2 {
-        font-size: 0rem !important; 
-    }
     body {
         width: 100% !important; 
     }
@@ -219,6 +216,19 @@ h1 {
     }
     .main-heading {
         max-width: 100%;
+    }
+    .engage {
+        width: 75%; 
+        margin:auto; 
+        max-width: 500vw;
+    }
+
+    .second-part h2 {
+        font-size: 3.5rem !important; 
+    }
+
+    .second-part p {
+        font-size: 1.3rem; 
     }
 }
 
