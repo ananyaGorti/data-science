@@ -192,7 +192,7 @@ h1 {
     display: none; 
 }
 
-@media (max-width: 780px) {
+@media (max-width: 890px) {
     .inner-services > div {
         transform: scale(.8); 
     }
@@ -218,9 +218,17 @@ h1 {
         max-width: 100%;
     }
     .engage {
-        width: 75%; 
-        margin:auto; 
-        max-width: 500vw;
+        width: 20% !important; 
+        margin: auto; 
+        max-width: 100vw !important;
+        min-width: 100vw !important;
+
+        text-align: center; 
+    }
+
+    .engage p {
+        width: 80% !important; 
+        margin: auto; 
     }
 
     .second-part h2 {
@@ -230,13 +238,37 @@ h1 {
     .second-part p {
         font-size: 1.3rem; 
     }
+    .services .button-28 {
+        transform: scale(0.85); /* Scale the table by 1.2 times */
+        min-width: 20vw !important; 
+        max-width: 20vw !important;
+    }
+    .inner-services {
+        margin-top: 120px; 
+        margin-bottom: 50px; 
+            transform: scale(1.17); /* Scale the table by 1.2 times */
+
+    }
+    
+}
+
+.engage .button-28 {
+    margin-top: 35px; 
+    margin: center; 
+    justify-content: center !important;
+    min-width: 40vw;
+    max-width: 40vw;
 }
 
 @media (max-width: 900px) {
 
     .lottie-ipad {
         display: block; 
-        margin-top: -12vh; 
+        margin-top: -20vh !important; 
+        margin: auto; 
+    }
+    .engage p {
+        margin-top: -50px; 
     }
     .reg, .hiders {
         display: none; 
@@ -340,8 +372,8 @@ h1 {
         width: 70vw !important;
     }
 
-    .t {
-        font-size: 1rem !important; 
+    .second-part h2 {
+        font-size: 2rem !important; 
     }
 }
 
@@ -391,6 +423,8 @@ font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, 
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
   border-color: white; 
+  border: 2px solid #1A1A1A;
+
 }
 
 .button-28:active {
