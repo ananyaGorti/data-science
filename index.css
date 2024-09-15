@@ -377,11 +377,11 @@ h1 {
     }
 }
 
-@media (min-width: 1600px) {
+/*@media (min-width: 1600px) {
     .the-second-curve {
         margin-top: 100px !important; 
     }
-}
+}*/
 
 /* CSS */
 .button-28 {
