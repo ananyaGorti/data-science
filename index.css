@@ -384,8 +384,10 @@ h1 {
 }
 
 @media (min-width: 1600px) {
-    .inner-services {
-        transform: scale(1.1);
+    .inner-services .button-28 {
+        max-width: 20vw; 
+        min-width: 20vw; 
+
     }
 }
 
