@@ -243,6 +243,11 @@ h1 {
         min-width: 20vw !important; 
         max-width: 20vw !important;
     }
+
+    .services .button-28:hover {
+        transform: scale(0.85); /* Scale the table by 1.2 times */
+
+    }
     .inner-services {
         margin-top: 120px; 
         margin-bottom: 50px; 
@@ -259,6 +264,7 @@ h1 {
     min-width: 40vw;
     max-width: 40vw;
 }
+
 
 @media (max-width: 900px) {
 
